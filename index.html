@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Actu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📰 Veille Actu</h1>
+    <div class="controls">
+      <select id="sortSelect">
+        <option value="date">Trier : Plus récents</option>
+        <option value="title">Trier : A→Z</option>
+        <option value="source">Trier : Source</option>
+      </select>
+      <button id="refresh">🔄 Actualiser</button>
+    </div>
+  </header>
+
+  <section id="feeds">
+    <h2>Flux suivis</h2>
+    <ul id="feedList"></ul>
+    <div class="add-feed">
+      <input type="url" id="newFeed" placeholder="https://exemple.com/rss.xml">
+      <button id="addFeed">➕ Ajouter</button>
+    </div>
+  </section>
+
+  <main id="articles"></main>
+
+  <footer>
+    <p>Veille Actu — Propulsé par RSS | <a href="https://github.com/">GitHub Pages</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #ddd; }
+  article { background: #1e1e1e; }
+}
+header, footer {
+  background: #0048a8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 { margin: 0; }
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+button, select, input {
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: .4rem .6rem;
+}
+button {
+  cursor: pointer;
+  background: #0048a8;
+  color: white;
+  border: none;
+}
+button:hover { opacity: 0.9; }
+#feeds {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+@media (prefers-color-scheme: dark) {
+  #feeds { background: #1e1e1e; }
+}
+#feeds h2 { margin-top: 0; }
+#feedList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+#feedList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: .3rem 0;
+}
+#feedList button {
+  background: #c00;
+  color: white;
+  border: none;
+  padding: .3rem .5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#feedList button:hover { opacity: 0.8; }
+.add-feed {
+  display: flex;
+  gap: .5rem;
+}
+.add-feed input {
+  flex: 1;
+  padding: .4rem;
+}
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+article {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+article h2 { margin: 0 0 .5rem; }
+article a { color: #0048a8; text-decoration: none; }
+article small { color: gray; }
