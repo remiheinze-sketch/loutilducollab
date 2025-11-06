@@ -1,0 +1,53 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #ddd; }
+  article { background: #1e1e1e; }
+}
+
+header, footer {
+  background: #0048a8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header button {
+  background: white;
+  color: #0048a8;
+  border: none;
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feeds {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+#feeds input { width: 250px; padding: .4rem; }
+
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+article {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+article h2 { margin: 0 0 .5rem; }
+article a { color: #0048a8; text-decoration: none; }
+article small { color: gray; }
